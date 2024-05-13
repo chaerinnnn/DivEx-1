@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Activity</title>
+    <style>
+            .body {
+                font-family:Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                font-weight: 400;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .box {
+                background-color: #868e96;
+                padding: 10px;
+            }
+
+            .div-header, .div-banner, .div-sidebarone, .div-content, .div-sidebartwo, .div-fooster {
+                font-family: 'Arial', sans-serif;
+                border: 1px solid #000000;
+                text-align: center;
+            }
+
+            .div-header {
+                grid-column: span 3;
+                width: auto;
+                height: 50px;
+            }
+
+            .div-banner {
+                grid-column: span 3;
+                width: auto;
+                height: 100px;
+            }
+
+            .div-sidebarone {
+                grid-column: span 1;
+                width: auto; 
+                height: 300px;
+            }
+
+            .div-content {
+                grid-column: span 1;
+                width: 600px;
+            }
+
+            .div-sidebartwo {
+                grid-column: span 1;
+                grid-row: span 2;
+                width: auto; 
+                height: 300px;
+            }
+
+            .div-fooster {
+                grid-column: span 3;
+                width: auto;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-header box">
+            <p>Header</p>
+        </div>
+        <div class="div-banner box">
+            <br>
+                <p>Banner</p>
+            </br>
+        </div>
+        <div class="div-sidebarone box">
+            <p>Sidebar One</p>
+        </div>
+        <div class="div-content box">
+            <p>Content</p>
+        </div>
+        <div class="div-sidebartwo box">
+            <p>Sidebar Two</p>
+        </div>
+        <div class="div-fooster box">
+            <p>Fooster</p>
+        </div>
+    </div>
+</body>
+</html>
